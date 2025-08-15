@@ -1,0 +1,126 @@
+.user-role {
+  background-color: white;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+}
+
+.user-role__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.user-role__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.permission-modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+}
+
+.permission-modal-overlay--hidden {
+  display: none;
+}
+
+.permission-modal {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 32rem;
+  margin: 0 1rem;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.permission-modal__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.permission-modal__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.permission-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.permission-item__checkbox {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+  border-color: #d1d5db;
+  margin-top: 0.25rem;
+}
+
+.permission-item__details {
+  flex: 1;
+}
+
+.permission-item__label {
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.permission-item__description {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.permission-modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.button--primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.button--primary:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}
+
+.button--secondary {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.button--secondary:hover:not(:disabled) {
+  background-color: #e5e7eb;
+}
